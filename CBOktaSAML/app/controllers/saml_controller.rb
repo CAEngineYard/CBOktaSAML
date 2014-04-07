@@ -26,7 +26,7 @@ class SamlController < ApplicationController
       puts "Session[:user_id: " + session[:user_id]
       puts "Session[:return_from_saml_url]"+  session[:return_from_saml_url]
       if session[:return_from_saml_url].nil?
-        return redirect_to '/security_tags'
+        return redirect_to '/[your page goes here]'
       end
       redirect_to session[:return_from_saml_url]
     else
